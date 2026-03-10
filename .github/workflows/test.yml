@@ -1,13 +1,13 @@
 name: Build Test
 
-on:
-  push:
-    branches:
-      - "master"
-      - "compose"
-    paths-ignore:
-      - "**.md"
-  workflow_dispatch:
+# on:
+#   push:
+#     branches:
+#       - "master"
+#       - "compose"
+#     paths-ignore:
+#       - "**.md"
+#   workflow_dispatch:
 
 jobs:
   build:
