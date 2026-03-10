@@ -111,6 +111,15 @@ android {
         }
     }
 
+    splits {  
+        abi {  
+            enable true  
+            reset()
+            include 'arm64-v8a'
+            universalApk false
+        }  
+    } 
+
     android.applicationVariants.configureEach { variant ->
         variant.outputs.configureEach { output ->
             //noinspection GrDeprecatedAPIUsage
